@@ -1,0 +1,25 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "Restaurant JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stricks1/restaurant.git"
+  },
+  "author": "Gabriel Silveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Stricks1/restaurant/issues"
+  },
+  "homepage": "https://github.com/Stricks1/restaurant#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
