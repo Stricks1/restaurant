@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const FontminPlugin = require('fontmin-webpack');
 
 module.exports = {
   entry: {
@@ -10,6 +11,10 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Restaurant',
+    }),
+    new FontminPlugin({
+      autodetect: true,
+      glyphs: ['\f017'],
     }),
   ],
   output: {
@@ -23,6 +28,7 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
+          'sass-loader',
         ],
       },
       {
