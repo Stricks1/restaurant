@@ -1,53 +1,8 @@
-import logoImg from './logo.png';
+import renderBgImage from './renderBg';
 
 const renderHome = () => {
-  console.log('erer');
-  const start = document.getElementsByTagName('body');
+  const { main, bgDiv, divMainInfo, start } = renderBgImage('bg-main')
 
-  console.log(start);
-  const navContainer = document.createElement('div');
-  navContainer.classList.add('nav-container');
-  const navTop = document.createElement('nav');
-  navTop.classList.add('d-flex', 'justify-content-between', 'align-items-center', 'pr-2', 'navTop', 'flex-column', 'flex-sm-row');
-  const div1 = document.createElement('div');
-  div1.classList.add('d-flex')
-  const img = document.createElement('img');
-  img.setAttribute('src', logoImg);
-  img.classList.add('h-100', 'p-2', 'ml-4', 'navLinks');
-  const ul = document.createElement('ul');
-  ul.classList.add('d-flex', 'list', 'flex-column', 'flex-sm-row');
-  const li1 = document.createElement('li');
-  const a1 = document.createElement('a');
-  a1.classList.add('navLinks', 'selected');
-  a1.innerHTML = 'Home';
-  li1.classList.add('p-2');
-  li1.appendChild(a1);
-  const li2 = document.createElement('li');
-  const a2 = document.createElement('a');
-  a2.innerHTML = 'Menu';
-  a2.classList.add('navLinks');
-  li2.classList.add('p-2');
-  li2.appendChild(a2);
-  const li3 = document.createElement('li');
-  const a3 = document.createElement('a');
-  a3.innerHTML = 'Contacts';
-  a3.classList.add('navLinks');
-  li3.classList.add('p-2');
-  li3.appendChild(a3);
-  ul.appendChild(li1);
-  ul.appendChild(li2);
-  ul.appendChild(li3);
-  div1.appendChild(ul);
-  navTop.appendChild(img);
-  navTop.appendChild(div1);
-  navContainer.appendChild(navTop)
-  start[0].appendChild(navContainer);
-  const main = document.createElement('main');
-  const bgDiv = document.createElement('div');
-  main.classList.add('main-page');
-  bgDiv.classList.add('bg-main');
-  const divMainInfo = document.createElement('div');
-  divMainInfo.classList.add('d-flex', 'flex-column', 'justify-content-between', 'vh-sm-80');
   const divMainTxt = document.createElement('h1');
   divMainTxt.classList.add('div-text');
   divMainTxt.innerHTML = 'Enjoy the taste of Brazilian cuisine by the sea.'
@@ -55,13 +10,40 @@ const renderHome = () => {
   divBottomInfo.classList.add('d-flex', 'flex-column', 'justify-content-between', 'flex-sm-row', 'px-4');
   const divBottomInfo1 = document.createElement('div');
   const divBottomInfo2 = document.createElement('div');
-  divBottomInfo1.classList.add('box-info', 'm-4', 'p-3');
-  divBottomInfo2.classList.add('box-info', 'm-4', 'p-3');
+  divBottomInfo1.classList.add('box-info', 'm-4', 'p-3', 'py-4');
+  divBottomInfo2.classList.add('box-info', 'm-4', 'p-3', 'py-4');
   const divInfo1Img = document.createElement('div');
   const divInfo2Img = document.createElement('div');
-  divBottomInfo1.innerHTML = '<i class="fa fa-clock-o" aria-hidden="true"></i> <span>Working Hours 10AM-3PM 6PM-11PM</span>'
-  divBottomInfo2.innerHTML = 'Phone (99) 9999-9999 Contact Us'
-  
+  const clockImg = document.createElement('i');
+  divInfo1Img.classList.add('d-flex', 'flex-column', 'justify-content-between');
+  clockImg.classList.add('fa', 'fa-clock-o', 'align-self-center', 'box-image');
+  clockImg.setAttribute('aria-hidden', 'true');
+  divInfo1Img.appendChild(clockImg);
+  const BoxTitle1 = document.createElement('h3');
+  BoxTitle1.classList.add('text-center', 'align-self-center', 'my-4', 'font-weight-bold', 'title-box');
+  BoxTitle1.innerHTML = 'Working Hours'
+  divInfo1Img.appendChild(BoxTitle1);
+  const BoxSpan1 = document.createElement('span');
+  BoxSpan1.classList.add('font-weight-bold', 'align-self-center');
+  BoxSpan1.innerHTML = '10AM-3PM/6PM-11PM'
+  divInfo1Img.appendChild(BoxSpan1);
+
+  divInfo2Img.classList.add('d-flex', 'flex-column', 'justify-content-between');
+
+  const phoneImg = document.createElement('i');
+  phoneImg.classList.add('fas', 'fa-phone', 'align-self-center', 'box-image');
+  divInfo2Img.appendChild(phoneImg);
+  const BoxTitle2 = document.createElement('h3');
+  BoxTitle2.classList.add('text-center', 'align-self-center', 'my-4', 'font-weight-bold', 'title-box');
+  BoxTitle2.innerHTML = 'Contact Phone'
+  divInfo2Img.appendChild(BoxTitle2);
+  const BoxSpan2 = document.createElement('span');
+  BoxSpan2.classList.add('font-weight-bold', 'align-self-center');
+  BoxSpan2.innerHTML = '(99) 9999-9999'
+  divInfo2Img.appendChild(BoxSpan2);
+
+  divBottomInfo1.appendChild(divInfo1Img);
+  divBottomInfo2.appendChild(divInfo2Img);
   divBottomInfo.appendChild(divBottomInfo1);
   divBottomInfo.appendChild(divBottomInfo2);
 
@@ -70,21 +52,6 @@ const renderHome = () => {
   divMainInfo.appendChild(divBottomInfo);
   main.appendChild(divMainInfo);
   start[0].appendChild(main);
-
-  const clean = () => {
-    main.remove();
-  };
-  
-  a2.addEventListener('click', () => {
-    clean();
-    contactlink();
-  });
-  
-  a3.addEventListener('click', () => {
-    clean();
-    itemslaink();
-  });
 };
-
 
 export default (renderHome);

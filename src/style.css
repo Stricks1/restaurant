@@ -8,18 +8,32 @@
 }
 
 .main-page {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
-.bg-main {
-  background-image: url(./frontMacuco1.jpg);
+.bg-opac {
   background-size: cover;
   background-position:right top;
   z-index: -1;
   position: absolute;
-  width: 100vw;
-  height: 95vh;
+  width: 100%;
+  height: 92vh;
+  opacity: 0.5;   
+}
+
+.bg-main {
+  background-image: url(./img/frontMacuco1.jpg);
+  min-height: 705px;
+}
+
+.bg-contact {
+  background-image: url(./img/backMacuco2.jpg);
+  opacity: 0.5;
+}
+
+.bg-items {
+  background-image: url(./img/backMacuco1.jpg);
   opacity: 0.5;
 }
 
@@ -52,7 +66,9 @@
 }
 
 .div-text {
+  min-width: 390px;
   padding: 3rem;
+  padding-bottom: 1rem;
   color: #ff2800;
 }
 
@@ -61,12 +77,27 @@
   -moz-box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.75);
   box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.75);
   background-color: #fcfbe5;
+  min-width: 300px;
+}
+
+.box-image {
+  font-size: 2rem;
+  color: #ff2800;
+}
+
+.box-info span {
+  font-size: 1rem;
+}
+
+.title-box {
+  font-size: 1.25rem
 }
 
 @media (min-width: 576px) {
   .bg-main {
     width: 100vw;
     height: 92vh;
+    min-height: 500px;
   }
   
   .navTop {
@@ -90,24 +121,65 @@
   }
   
   .div-text {
-    padding: 8% 6%;
+    padding: 8% 6% 0%;
     width: 65%;
   }
 
   .vh-sm-80 {
     height: 80vh;
   }
+
+  .box-info {
+    min-width: 230px;
+    width: 33%;
+  }
+
+  .box-info span {
+    font-size: 1rem;
+  }
+
+  .title-box {
+    font-size: 1.25rem
+  }
+
+  .box-image {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 992px) {
   .box-info {
-    font-size: 1.35rem;
+    min-width: 340px;
+  }
+
+  .box-info span {
+    font-size: 1.25rem;
+  }
+
+  .title-box {
+    font-size: 1.5rem
+  }
+
+  .box-image {
+    font-size: 2.5rem;
   }
 }
 
 @media (min-width: 1200px) {
   .div-text {
-    font-size: 5rem;
+    font-size: 3.75rem;
+  }
+
+  .box-info span {
+    font-size: 1.5rem;
+  }
+
+  .title-box {
+    font-size: 2rem
+  }
+
+  .box-image {
+    font-size: 3rem;
   }
 
   .box-info {
