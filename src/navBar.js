@@ -30,7 +30,7 @@ const navBar = () => {
   li2.appendChild(a2);
   const li3 = document.createElement('li');
   const a3 = document.createElement('a');
-  a3.innerHTML = 'Contacts';
+  a3.innerHTML = 'Contact Us';
   a3.classList.add('navLinks');
   li3.classList.add('p-2');
   li3.appendChild(a3);
@@ -51,6 +51,11 @@ const navBar = () => {
   const clean = () => {
     main.innerHTML = '';
   };
+
+  img.addEventListener('click', () => {
+    clean();
+    renderHome();
+  });
 
   a1.addEventListener('click', () => {
     clean();

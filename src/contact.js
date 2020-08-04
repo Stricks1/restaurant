@@ -1,4 +1,5 @@
 import renderBgImage from './renderBg';
+import selectTab from './selectTab';
 
 const renderContact = () => {
   const {
@@ -7,6 +8,8 @@ const renderContact = () => {
     divMainInfo,
     start,
   } = renderBgImage('bg-contact');
+
+  selectTab(3);
 
   const form = document.createElement('form');
   form.classList.add('form');

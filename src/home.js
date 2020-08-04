@@ -1,4 +1,5 @@
 import renderBgImage from './renderBg';
+import selectTab from './selectTab';
 
 const renderHome = () => {
   const {
@@ -7,6 +8,8 @@ const renderHome = () => {
     divMainInfo,
     start,
   } = renderBgImage('bg-main');
+
+  selectTab(1);
 
   const divMainTxt = document.createElement('h1');
   divMainTxt.classList.add('div-text');
