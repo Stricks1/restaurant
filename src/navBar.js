@@ -10,7 +10,7 @@ const navBar = () => {
   const navTop = document.createElement('nav');
   navTop.classList.add('d-flex', 'justify-content-between', 'align-items-center', 'pr-2', 'navTop', 'flex-column', 'flex-sm-row');
   const div1 = document.createElement('div');
-  div1.classList.add('d-flex')
+  div1.classList.add('d-flex');
   const img = document.createElement('img');
   img.setAttribute('src', logoImg);
   img.classList.add('h-100', 'p-2', 'ml-4', 'navLinks');
@@ -40,7 +40,7 @@ const navBar = () => {
   div1.appendChild(ul);
   navTop.appendChild(img);
   navTop.appendChild(div1);
-  navContainer.appendChild(navTop)
+  navContainer.appendChild(navTop);
   start[0].appendChild(navContainer);
 
   const main = document.createElement('main');
@@ -49,7 +49,7 @@ const navBar = () => {
   start[0].appendChild(main);
 
   const clean = () => {
-    main.innerHTML = ''
+    main.innerHTML = '';
   };
 
   a1.addEventListener('click', () => {
@@ -61,11 +61,11 @@ const navBar = () => {
     clean();
     renderItems();
   });
-  
+
   a3.addEventListener('click', () => {
     clean();
     renderContact();
   });
-}
+};
 
 export default (navBar);

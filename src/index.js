@@ -6,5 +6,3 @@ import navBar from './navBar';
 
 navBar();
 renderHome();
-
-console.log('Restaurant page');

@@ -26,7 +26,7 @@ module.exports = {
             options: {
               limit: 8192,
             },
-          }
+          },
         ],
       },
       {
@@ -42,11 +42,11 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'fonts/'
-            }
-          }
-        ]
-      }
+              outputPath: 'fonts/',
+            },
+          },
+        ],
+      },
     ],
   },
 };

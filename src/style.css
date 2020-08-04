@@ -93,6 +93,81 @@
   font-size: 1.25rem
 }
 
+.form {
+  -webkit-box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.75);
+  background-color: #fcfbe5;
+  padding: 2rem;
+  max-width: 40em;
+  margin: 1rem auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.form .button {
+  cursor: pointer;
+  background: #ff2800;
+  color: white;
+  font-weight: bold;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  text-align: center;
+  margin: auto;
+  margin-top: 1rem;
+  width: 50%;
+}
+
+.form .button:active {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
+.form .label,
+.form .txt-input,
+.form .textarea,
+.form .select,
+.form .button {
+  padding: 0.75em 1em;
+  border: none;
+  display: block;
+  -webkit-appearance: none;
+}
+
+.textarea {
+  resize: none;
+}
+
+.form .label {
+  font-weight: bold;
+  color: #ff2800;
+  padding-top: 0;
+  padding-left: 0;
+}
+
+.validate .label:after {
+  content: " *";
+  color: #E8474C;
+  font-size: 0.75em;
+  vertical-align: top;
+}
+
+.form .txt-input,
+.form .textarea,
+.form .select {
+  width: 100%;
+  background: #aaaaaa;
+  color: black;
+}
+
+.form .field {
+  width: 100%;
+}
+
 @media (min-width: 576px) {
   .bg-main {
     width: 100vw;
@@ -129,6 +204,10 @@
     height: 80vh;
   }
 
+  .vh-sm-92 {
+    height: 92vh;
+  }
+
   .box-info {
     min-width: 230px;
     width: 33%;
@@ -144,6 +223,15 @@
 
   .box-image {
     font-size: 2rem;
+  }
+
+  .form .field.divided {
+    width: calc(50% - 1px);
+  }
+
+  .form .button {
+    margin: 0;
+    margin-left: auto;
   }
 }
 

@@ -1,11 +1,16 @@
 import renderBgImage from './renderBg';
 
 const renderHome = () => {
-  const { main, bgDiv, divMainInfo, start } = renderBgImage('bg-main')
+  const {
+    main,
+    bgDiv,
+    divMainInfo,
+    start,
+  } = renderBgImage('bg-main');
 
   const divMainTxt = document.createElement('h1');
   divMainTxt.classList.add('div-text');
-  divMainTxt.innerHTML = 'Enjoy the taste of Brazilian cuisine by the sea.'
+  divMainTxt.innerHTML = 'Enjoy the taste of Brazilian cuisine by the sea.';
   const divBottomInfo = document.createElement('div');
   divBottomInfo.classList.add('d-flex', 'flex-column', 'justify-content-between', 'flex-sm-row', 'px-4');
   const divBottomInfo1 = document.createElement('div');
@@ -21,11 +26,11 @@ const renderHome = () => {
   divInfo1Img.appendChild(clockImg);
   const BoxTitle1 = document.createElement('h3');
   BoxTitle1.classList.add('text-center', 'align-self-center', 'my-4', 'font-weight-bold', 'title-box');
-  BoxTitle1.innerHTML = 'Working Hours'
+  BoxTitle1.innerHTML = 'Working Hours';
   divInfo1Img.appendChild(BoxTitle1);
   const BoxSpan1 = document.createElement('span');
   BoxSpan1.classList.add('font-weight-bold', 'align-self-center');
-  BoxSpan1.innerHTML = '10AM-3PM/6PM-11PM'
+  BoxSpan1.innerHTML = '10AM-3PM/6PM-11PM';
   divInfo1Img.appendChild(BoxSpan1);
 
   divInfo2Img.classList.add('d-flex', 'flex-column', 'justify-content-between');
@@ -35,11 +40,11 @@ const renderHome = () => {
   divInfo2Img.appendChild(phoneImg);
   const BoxTitle2 = document.createElement('h3');
   BoxTitle2.classList.add('text-center', 'align-self-center', 'my-4', 'font-weight-bold', 'title-box');
-  BoxTitle2.innerHTML = 'Contact Phone'
+  BoxTitle2.innerHTML = 'Contact Phone';
   divInfo2Img.appendChild(BoxTitle2);
   const BoxSpan2 = document.createElement('span');
   BoxSpan2.classList.add('font-weight-bold', 'align-self-center');
-  BoxSpan2.innerHTML = '(99) 9999-9999'
+  BoxSpan2.innerHTML = '(99) 9999-9999';
   divInfo2Img.appendChild(BoxSpan2);
 
   divBottomInfo1.appendChild(divInfo1Img);
@@ -47,6 +52,7 @@ const renderHome = () => {
   divBottomInfo.appendChild(divBottomInfo1);
   divBottomInfo.appendChild(divBottomInfo2);
 
+  divMainInfo.classList.add('justify-content-between', 'vh-sm-80');
   main.appendChild(bgDiv);
   divMainInfo.appendChild(divMainTxt);
   divMainInfo.appendChild(divBottomInfo);
