@@ -33,7 +33,7 @@ const renderHome = () => {
   divInfo1Img.appendChild(BoxTitle1);
   const BoxSpan1 = document.createElement('span');
   BoxSpan1.classList.add('font-weight-bold', 'align-self-center');
-  BoxSpan1.innerHTML = '10AM-3PM/6PM-11PM';
+  BoxSpan1.innerHTML = '10AM-3PM / 6PM-11PM';
   divInfo1Img.appendChild(BoxSpan1);
 
   divInfo2Img.classList.add('d-flex', 'flex-column', 'justify-content-between');
