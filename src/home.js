@@ -1,5 +1,6 @@
 import renderBgImage from './renderBg';
 import selectTab from './selectTab';
+import logoBig from './img/logoBig.png';
 
 const renderHome = () => {
   const {
@@ -11,9 +12,18 @@ const renderHome = () => {
 
   selectTab(1);
 
+  const divContainer = document.createElement('div');
+  divContainer.classList.add('d-flex', 'justify-content-between');
+  const img = document.createElement('img');
+  img.setAttribute('src', logoBig);
+  img.classList.add('logo-big');
+
   const divMainTxt = document.createElement('h1');
   divMainTxt.classList.add('div-text');
   divMainTxt.innerHTML = 'Enjoy the taste of Brazilian cuisine by the sea.';
+  divContainer.appendChild(divMainTxt);
+  divContainer.appendChild(img);
+
   const divBottomInfo = document.createElement('div');
   divBottomInfo.classList.add('d-flex', 'flex-column', 'justify-content-between', 'flex-sm-row', 'px-4');
   const divBottomInfo1 = document.createElement('div');
@@ -57,7 +67,7 @@ const renderHome = () => {
 
   divMainInfo.classList.add('justify-content-between', 'vh-sm-80');
   main.appendChild(bgDiv);
-  divMainInfo.appendChild(divMainTxt);
+  divMainInfo.appendChild(divContainer);
   divMainInfo.appendChild(divBottomInfo);
   main.appendChild(divMainInfo);
   start[0].appendChild(main);

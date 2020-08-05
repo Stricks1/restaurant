@@ -22,6 +22,7 @@ const renderContact = () => {
   const inpu1 = document.createElement('input');
   inpu1.classList.add('txt-input');
   inpu1.setAttribute('id', 'name');
+  inpu1.setAttribute('type', 'text');
 
   p1.appendChild(label1);
   p1.appendChild(inpu1);
@@ -35,6 +36,7 @@ const renderContact = () => {
   const inpu2 = document.createElement('input');
   inpu2.classList.add('txt-input');
   inpu2.setAttribute('id', 'email');
+  inpu2.setAttribute('type', 'email');
 
   p2.appendChild(label2);
   p2.appendChild(inpu2);
@@ -48,6 +50,7 @@ const renderContact = () => {
   const inpu3 = document.createElement('input');
   inpu3.classList.add('txt-input');
   inpu3.setAttribute('id', 'phone');
+  inpu3.setAttribute('type', 'tel');
 
   p3.appendChild(label3);
   p3.appendChild(inpu3);
@@ -61,6 +64,7 @@ const renderContact = () => {
   const inpu4 = document.createElement('textarea');
   inpu4.classList.add('textarea');
   inpu4.setAttribute('id', 'message');
+  inpu4.setAttribute('type', 'text');
 
   p4.appendChild(label4);
   p4.appendChild(inpu4);
@@ -96,6 +100,7 @@ const renderContact = () => {
   const button1 = document.createElement('input');
   button1.classList.add('button');
   button1.value = 'Submit';
+  button1.setAttribute('type', 'submit');
   button1.disabled = true;
   p6.appendChild(button1);
   form.appendChild(p6);
