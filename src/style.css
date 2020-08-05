@@ -7,6 +7,10 @@
   background-color: #fcfbe5;
 }
 
+.min-w-370px {
+  min-width: 370px;
+}
+
 .main-page {
   position: relative;
   z-index: 1;
@@ -29,7 +33,7 @@
   position: absolute;
   width: 100%;
   height: 92vh;
-  opacity: 0.5; 
+  opacity: 0.5;
 }
 
 .bg-main {
@@ -45,7 +49,6 @@
 .bg-items {
   background-image: url(./img/bg-repeats.jpg);
   background-repeat: repeat;
-  opacity: 0.5;
 }
 
 .navTop {
@@ -81,6 +84,17 @@
   padding: 3rem;
   padding-bottom: 1rem;
   color: #ff2800;
+}
+
+.div-title {
+  color: #ff2800;
+  text-align: center;
+  border-radius: 15px;
+  padding: 2rem;  
+  -webkit-box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.75);
+  background-color: #fcfbe5;
 }
 
 .box-info {
@@ -184,6 +198,22 @@
   display: none;
 }
 
+.item-menu-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.av-star {
+  color: orangered;
+  cursor: pointer;
+}
+
+.h-min-100 {
+  min-height: 92vh;
+  height: 100%;
+}
+
 @media (min-width: 576px) {
   .bg-main {
     width: 100vw;
@@ -232,13 +262,9 @@
     height: 92vh;
   }
 
-  .vh-sm-92 {
-    height: 92vh;
-  }
-
   .box-info {
     min-width: 230px;
-    width: 33%;
+    width: 80%;
   }
 
   .box-info span {
@@ -267,6 +293,13 @@
   }
 }
 
+@media (min-width: 604px) {
+  .box-info {
+    min-width: 230px;
+    width: 25%;
+  }
+}
+
 @media (min-width: 992px) {
   .box-info {
     min-width: 340px;
@@ -282,6 +315,10 @@
 
   .box-image {
     font-size: 2.5rem;
+  }
+
+  .av-star {
+    font-size: 1.25rem;
   }
 }
 
@@ -302,7 +339,7 @@
     font-size: 3rem;
   }
 
-  .box-info {
-    font-size: 1.75rem;
+  .av-star {
+    font-size: 1.5rem;
   }
 }

@@ -7,16 +7,19 @@ const renderBgImage = (classImage) => {
   };
 
   clean();
-  const bgDiv = document.createElement('div');
+
   main.classList.add('main-page');
-  bgDiv.classList.add(classImage);
+  const bgDiv = document.createElement('div');
   if (classImage !== 'bg-items') {
-    bgDiv.classList.add('bg-opac');
+    bgDiv.classList.add(classImage, 'bg-opac', 'min-w-370px');
+    main.appendChild(bgDiv);
   }
   const divMainInfo = document.createElement('div');
-  divMainInfo.classList.add('d-flex', 'flex-column');
-
-  main.appendChild(bgDiv);
+  if (classImage === 'bg-items') {
+    divMainInfo.classList.add('d-flex', 'flex-column', classImage, 'min-w-370px');
+  } else {
+    divMainInfo.classList.add('d-flex', 'flex-column', 'min-w-370px');
+  }
   main.appendChild(divMainInfo);
   start[0].appendChild(main);
 
