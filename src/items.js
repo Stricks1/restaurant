@@ -117,7 +117,7 @@ const renderItems = () => {
   divInfo3Img.appendChild(imgMenu3);
   const BoxTitle3 = document.createElement('h3');
   BoxTitle3.classList.add('text-center', 'align-self-center', 'my-4', 'font-weight-bold', 'title-box');
-  BoxTitle3.innerHTML = 'Feijoada';
+  BoxTitle3.innerHTML = 'Bean Stew';
   divInfo3Img.appendChild(BoxTitle3);
   const divStarPriceContainer3 = document.createElement('div');
   divStarPriceContainer3.classList.add('d-flex', 'justify-content-between');
