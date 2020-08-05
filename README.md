@@ -31,7 +31,7 @@ On the menu, it is possible to rate the dishes from 1 to 5 stars.
 
 ## Demo
 
-[Live Demo](https://raw.githack.com/Stricks1/JsTicTacToe/feature-ai/index.html)
+[Live Demo](https://raw.githack.com/Stricks1/restaurant/feature-restaurant/dist/index.html)
 
 ## Installation
 
