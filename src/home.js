@@ -65,7 +65,7 @@ const renderHome = () => {
   divBottomInfo.appendChild(divBottomInfo1);
   divBottomInfo.appendChild(divBottomInfo2);
 
-  divMainInfo.classList.add('justify-content-between', 'vh-sm-80');
+  divMainInfo.classList.add('justify-content-between', 'vh-sm-92');
   main.appendChild(bgDiv);
   divMainInfo.appendChild(divContainer);
   divMainInfo.appendChild(divBottomInfo);

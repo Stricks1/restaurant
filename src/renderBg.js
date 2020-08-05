@@ -9,7 +9,10 @@ const renderBgImage = (classImage) => {
   clean();
   const bgDiv = document.createElement('div');
   main.classList.add('main-page');
-  bgDiv.classList.add(classImage, 'bg-opac');
+  bgDiv.classList.add(classImage);
+  if (classImage !== 'bg-items') {
+    bgDiv.classList.add('bg-opac');
+  }
   const divMainInfo = document.createElement('div');
   divMainInfo.classList.add('d-flex', 'flex-column');
 
