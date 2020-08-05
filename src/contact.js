@@ -101,7 +101,6 @@ const renderContact = () => {
   button1.classList.add('button');
   button1.value = 'Submit';
   button1.setAttribute('type', 'submit');
-  button1.disabled = true;
   p6.appendChild(button1);
   form.appendChild(p6);
 
