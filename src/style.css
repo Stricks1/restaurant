@@ -44,7 +44,7 @@
 .bg-contact {
   background-image: url(./img/backMacuco2.jpg);
   opacity: 0.5;
-  min-height: 600px;
+  min-height: 740px;
 }
 
 .bg-items {
@@ -226,6 +226,10 @@
     width: 100vw;
     height: 92vh;
     min-height: 500px;
+  }
+
+  .bg-contact {
+    min-height: 600px;
   }
 
   .navTop {
