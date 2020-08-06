@@ -214,7 +214,7 @@
   height: 100%;
 }
 
-@media (min-height: 570px) {
+@media (min-height: 570px) and (min-width: 576px) {
   .vh-sm-92 {
     height: 92vh;
   }
