@@ -4,7 +4,7 @@ import renderContact from './contact';
 import renderItems from './items';
 
 const navBar = () => {
-  const start = document.getElementsByTagName('body');
+  const start = document.getElementById('content');
   const navContainer = document.createElement('div');
   navContainer.classList.add('nav-container');
   const navTop = document.createElement('nav');
@@ -51,12 +51,12 @@ const navBar = () => {
   navTop.appendChild(div0);
   navTop.appendChild(div1);
   navContainer.appendChild(navTop);
-  start[0].appendChild(navContainer);
+  start.appendChild(navContainer);
 
   const main = document.createElement('main');
   main.setAttribute('id', 'mainInfo');
   main.classList.add('main-page');
-  start[0].appendChild(main);
+  start.appendChild(main);
 
   const clean = () => {
     main.innerHTML = '';
