@@ -44,6 +44,7 @@
 .bg-contact {
   background-image: url(./img/backMacuco2.jpg);
   opacity: 0.5;
+  min-height: 600px;
 }
 
 .bg-items {
