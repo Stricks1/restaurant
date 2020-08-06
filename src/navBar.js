@@ -8,7 +8,7 @@ const navBar = () => {
   const navContainer = document.createElement('div');
   navContainer.classList.add('nav-container');
   const navTop = document.createElement('nav');
-  navTop.classList.add('d-flex', 'justify-content-between', 'align-items-center', 'pr-2', 'navTop', 'flex-column', 'flex-sm-row');
+  navTop.classList.add('d-flex', 'justify-content-between', 'align-items-center', 'pr-sm-2', 'navTop', 'flex-column', 'flex-sm-row');
   const div0 = document.createElement('div');
 
   const div1 = document.createElement('div');
