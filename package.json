@@ -1,0 +1,44 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "Restaurant JS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stricks1/restaurant.git"
+  },
+  "author": "Gabriel Silveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Stricks1/restaurant/issues"
+  },
+  "homepage": "https://github.com/Stricks1/restaurant#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.2.0",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "file-loader": "^6.0.0",
+    "fontmin-webpack": "^2.0.7",
+    "html-webpack-plugin": "^4.3.0",
+    "resolve-url-loader": "^3.1.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.14.1"
+  }
+}
